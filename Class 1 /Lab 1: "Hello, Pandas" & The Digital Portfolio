@@ -1,0 +1,36 @@
+# Projecct 1 
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+data = {
+    'Country': [
+        'United States', 'Argentina', 'Australia', 'Brazil', 'Britain', 'China',
+        'Egypt', 'Euro area', 'Hong Kong', 'Indonesia', 'Japan', 'Mexico',
+        'Norway', 'Pakistan', 'Philippines', 'Russia', 'Saudi Arabia',
+        'South Africa', 'South Korea'
+    ],
+    'iso_a3': [
+        'USA', 'ARG', 'AUS', 'BRA', 'GBR', 'CHN',
+        'EGY', 'EUZ', 'HKG', 'IDN', 'JPN', 'MEX',
+        'NOR', 'PAK', 'PHL', 'RUS', 'SAU',
+        'ZAF', 'KOR'
+    ],
+    'local_price': [
+        4.79, 28.00, 5.30, 13.50, 2.89, 17.20,
+        16.93, 3.68, 18.80, 27939, 370, 49.00,
+        48.00, 300, 163, 89.00, 11.00,
+        25.50, 4100
+    ],
+    'dollar_ex': [
+        1.00, 8.62, 1.23, 2.59, 0.66, 6.21,
+        7.36, 0.86, 7.74, 12472, 117.83, 14.63,
+        7.62, 100.67, 44.41, 65.44, 3.75,
+        11.49, 1084.66
+    ]
+}
+
+# Convert to DataFrame
+df = pd.DataFrame(data)
+print(df)
